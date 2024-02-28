@@ -1,3 +1,6 @@
 AddEventHandler('playerSpawned', function()
    TriggerServerEvent('mg_greeting:show')
 end)
+RegisterCommand('showgreeting', function ()
+   TriggerServerEvent('mg_greeting:show')
+end, false)
